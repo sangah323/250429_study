@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>250429 STUDY</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.10.0/dist/web3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <h1>COUNTER</h1>
+      <div id="countArea">
+        <div class="input-box">
+          <input id="account" type="text" placeholder="Contract Account" />
+          <input
+            id="numberA"
+            type="number"
+            placeholder="Number A or isOver target"
+          />
+          <input id="numberB" type="number" placeholder="Number B" />
+        </div>
+        <div class="btn-box">
+          <button onClick="connect()">CONNECT</button>
+          <button onClick="getCount()">RESULT</button>
+          <button onClick="increment()">INCREMENT</button>
+          <button onClick="sum()">SUM</button>
+          <button onClick="isOver()">OVER</button>
+        </div>
+      </div>
+      <div id="result" class="result"></div>
+    </div>
+    <script src="count.js"></script>
+  </body>
+</html>
