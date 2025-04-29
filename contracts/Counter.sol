@@ -5,8 +5,8 @@ contract Counter {
     uint256 private count;
     address public owner;
 
-    constructor(uint _initial) {
-        owner = msg.sender;
+    constructor(uint _initial, address _owner) {
+        owner = _owner;
         count = _initial;
     }
 
