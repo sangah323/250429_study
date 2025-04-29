@@ -22,7 +22,7 @@ async function deployToStory() {
 
     const deployTx = contract.deploy({
       data: bytecode,
-      arguments: [2, account.address],
+      arguments: [Number(2), account.address],
     });
 
     const deployData = deployTx.encodeABI();
